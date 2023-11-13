@@ -1,4 +1,4 @@
-<h1 align="center">Resumen y Organización del Repositorio</h1>
+<h1 align="center">Resumen y Organización del Repositorio DDSI-Seminario-2</h1>
 <h3 align="center">Miembros del grupo</h3>
 <h5 align="left">Jose Manuel Aranda Gutiérrez</h5>
 <h5 align="left">Gabriel Vico Arboledas</h5>
