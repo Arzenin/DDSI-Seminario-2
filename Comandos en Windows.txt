@@ -1,0 +1,31 @@
+Comando para crear el docker:
+	docker run -d --name seminario2 -e MYSQL_ROOT_PASSWORD=sem2 -e MYSQL_DATABASE=seminario2 -p 3306:3306 mysql
+
+Opciones de comando:
+	--name: 
+		Nombre del docker
+
+	MYSQL_ROOT_PASSWORD:
+		contraseña del usuario root, es decir que en este caso el usuario sería root y passwd sem2
+
+	MYSQL_DATABASE:
+		nombre de la base de datos
+
+	-p:
+		Puertos que va a ocupar
+	
+	mysql:
+		El modelo de docker que va a usar (Este tiene que estar previamente instalado)
+
+Puertos:
+	El primer 3306 es el puerto de entrada del docker y el segundo sería la entrada dentro de la máquina 
+	en la que se ejecuta el docker, es decir, todas las peticiones que entren a la máquina por ese puerto
+	serán redirigidas automáticamente al doker
+
+Comando para ver las bases de datos generadas dentro del docker:
+	docker exec -it seminario2 mysql -u root -psem2 -e "SHOW DATABASES;"
+
+Comando para ejecutar el Script dentro del docker:
+	docker exec -i seminario2 mysql -u root -psem2 seminario2 < ruta_al_script
+	
+
