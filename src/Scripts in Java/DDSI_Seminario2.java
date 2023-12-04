@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
  * @author jomar
  */
 public class DDSI_Seminario2{
-    String jdbcUrl = "jdbc:mysql://localhost:3306/AccesoDatos";
+    String jdbcUrl = "jdbc:mysql://localhost:3306/seminario2";
     String username = "root"; // Reemplaza con tu nombre de usuario
     String password = "sem2"; // Reemplaza con tu contraseña
 
