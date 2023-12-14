@@ -27,5 +27,6 @@ Comando para ver las bases de datos generadas dentro del docker:
 
 Comando para ejecutar el Script dentro del docker:
 	docker exec -i seminario2 mysql -u root -psem2 seminario2 < ruta_al_script
-	
+	En caso de error, probar con:
+		Get-Content 'C:\Users\gonza\Desktop\Prácticas\4º Ing Informática\DDSI\S2\Script.sql' | docker exec -i seminario2 mysql -u root -psem2 seminario2
 
