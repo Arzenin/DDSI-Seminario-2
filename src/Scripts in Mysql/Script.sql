@@ -1,3 +1,5 @@
+DROP TABLE STOCK;
+
 CREATE TABLE IF NOT EXISTS STOCK (
     Cproducto int,
     Cantidad int CHECK (Cantidad >= 0), 
