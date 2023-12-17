@@ -1,3 +1,5 @@
+Comando para generar una red de dockers:
+	docker network create mi_red
 Comando para crear el docker:
 	docker run -d --name seminario2 -e MYSQL_ROOT_PASSWORD=sem2 -e MYSQL_DATABASE=seminario2 -p 3306:3306 --network mi_red mysql
 
