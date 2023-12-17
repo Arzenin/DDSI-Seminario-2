@@ -12,7 +12,7 @@ app.use(express.json());
 // Revisar siempre si no va bien conexión a BD
 
 const dbConfig = {
-  host: "localhost",
+  host: "seminario2",
   user: "root",
   password: "sem2",
   database: "seminario2",
