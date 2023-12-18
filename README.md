@@ -25,7 +25,7 @@
 <p>Es el fichero que usted está leyendo en este mismo instante, cuya función es la de documentar el repositorio y explicar la correcta instalación y ejecución del proyecto.</p>
 
 
-<h3 align="center">3-Instalación y preparación de utilidades</h3>
+<h3 align="left">3-Instalación y preparación de utilidades</h3>
 <p>Para el correcto funcionamiento de este proyecto deberemos instalar determinadas herramientas las cuales explicaremos a continuación.</p>
 
 <h3 align="left">3.2-Instalación de git</h3>
@@ -44,7 +44,7 @@
   <li>Abrimos la power shell y ejecutamos el comando: git --version para comprobar la correcta instalación.</li>
 </ol>
 
-<h3 align="left">3.2-Clonación de repositorio de git</h3>
+<h3 align="left">3.1-Clonación de repositorio de git</h3>
 <ol>
   <li>Creamos un directorio donde vayamos a bajar el repositorio y abrimos la powershell en ese directorio</li>
   <li>Ejecutamos el comando: 
