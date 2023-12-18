@@ -9,7 +9,7 @@
 <h2 align="center">2-Organización del repositorio</h2>
 <p>En este apartado os explicaremos la organización del repositorio y de los archivos que podemos encontrar de cada directorio.</p>
 
-<h3 align="center">2.1-scr</h3>
+<h3 align="left">2.1-scr</h3>
 <p>El directorio src está destinado al almacenamiento de todos los códigos utilizados a la hora del desarrollo del WAF. Como podemos observar, a su vez este directorio contiene 3 directorios más. Al directorio App le dedicaremos su propia sección.</p>
 
 
