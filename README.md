@@ -29,9 +29,24 @@
 <p>Para el correcto funcionamiento de este proyecto deberemos instalar determinadas herramientas las cuales explicaremos a continuación.</p>
 
 <h3 align="left">Instalación de git</h3>
-<h5 align="left">ubuntu</h5>
+<h4 align="left">ubuntu</h4>
 <ol>
-  <li>Primer elemento</li>
-  <li>Segundo elemento</li>
-  <li>Tercer elemento</li>
+  <li>sudo apt update</li>
+  <li>sudo apt install git</li>
+  <li>git --version</li>
+</ol>
+
+<h4 align="left">Windows</h4>
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+
+
+<h4 align="left">Windows</h4>
+<ol>
+  <li>https://git-scm.com/download/win</li>
+  <li>Instalamos la Versión de Windows que dispongamos</li>
+  <li>Ejecutamos el instalador con los valores que deseemos no olvidando de marcar la opción de Git from command line and also from 3ed-party software, ya que si no              deberemos de añadir manualmente la variable de git por medio de modificar las variables de entorno(PATH) manualmente</li>
 </ol>
