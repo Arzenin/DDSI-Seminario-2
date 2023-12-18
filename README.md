@@ -53,7 +53,7 @@
 
 <h3 align="left">Instalación de Docker</h3>
 
-<h4 align="left">Ubunru</h4>
+<h4 align="left">Ubuntu</h4>
 <ol>
   <li>sudo apt update</li>
   <li>sudo apt install apt-transport-https ca-certificates curl	software-properties-common</li>
@@ -70,8 +70,6 @@
   <li>Ejecutamos el instalador con los valores por defecto, ya que en esta ocasión se añadirá esta variable automáticamente a PATH</li>
   <li>Reiniciamos el ordenador</li>
   <li>Abrimos la Powershell y ejecutamos docker --version para comprobar la correcta instalación</li>
-  <li></li>
-  <li></li>
 </ol>
 
 <h3 align="left">Instalación ZeroTier</h3>
