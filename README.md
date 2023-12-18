@@ -1,5 +1,5 @@
 <h1 align="center">Resumen y Organización del Repositorio DDSI-Seminario-2</h1>
-<h3 align="center">1-Miembros del grupo</h3>
+<h2 align="center">1-Miembros del grupo</h2>
 <h5 align="left">Jose Manuel Aranda Gutiérrez</h5>
 <h5 align="left">Gabriel Vico Arboledas</h5>
 <h5 align="left">Pablo Gervilla Miranda</h5>
@@ -27,7 +27,7 @@
 <h2 align="left">3-Instalación y preparación de utilidades</h2>
 <p>Para el correcto funcionamiento de este proyecto deberemos instalar determinadas herramientas las cuales explicaremos a continuación.</p>
 
-<h3 align="left">3.2-Instalación de git</h3>
+<h3 align="left">3.1-Instalación de git</h3>
 <h4 align="left">ubuntu</h4>
 <ol>
   <li>sudo apt update</li>
@@ -43,7 +43,7 @@
   <li>Abrimos la power shell y ejecutamos el comando: git --version para comprobar la correcta instalación.</li>
 </ol>
 
-<h3 align="left">3.1-Clonación de repositorio de git</h3>
+<h3 align="left">3.2-Clonación de repositorio de git</h3>
 <ol>
   <li>Creamos un directorio donde vayamos a bajar el repositorio y abrimos la powershell en ese directorio</li>
   <li>Ejecutamos el comando: 
@@ -89,7 +89,7 @@ Previo a esto deberemos de crearnos una cuenta en https://www.zerotier.com/
   <li>En el apartado de iconos de la bandeja del sistema(la flecha en la barra de tareas que podemos desplegar). Se encuentra ZeroTier</li>
 </ol>
 
-<h3 align="left">3.4-Generar una red virtual en ZeroTier</h3>
+<h3 align="left">3.5-Generar una red virtual en ZeroTier</h3>
 
 <ol>
   <li>Nos dirigimos a https://www.zerotier.com/</li>
@@ -104,14 +104,14 @@ sudo zerotier-cli join <ID_de_Red>
 <h4 align="left">Windows</h4>
 Click sobre el icono de zeroTier de la barra de tareas (Aplicaciones en segundo plano) y join new network, copiamos el network id en el campo correspondiente.
 
-<h3 align="left">3.5-Instalación del docker de MYSQL2</h3>
+<h3 align="left">3.6-Instalación del docker de MYSQL2</h3>
 <h4 align="left">Cualquier sistema con docker instalado</h4>
 <ol>
   <li>Abrimos la terminal</li>
   <li>docker pull mysql</li>
 </ol>
 	
-<h3 align="left">3.6-Instalación del WAF</h3>
+<h3 align="left">3.7-Instalación del WAF</h3>
 <h4 align="left">Ubuntu:</h4>
 <ol>
   <li>sudo apt update</li>
@@ -137,13 +137,61 @@ y node –version, en caso de que estos fallen se deberá a que no se han añadi
 
 
  
-<h3 align="left">Tutorial de Ejecución</h3>
-<h4 align="left">Windows</h4>
+<h2 align="left">4-Tutorial de Ejecución</h2>
+<h3 align="left">4.1-Introducción</h3>
+Antes de empezar queremos detacar que este proyecto tiene tres fromas de ejecutarse y no todas las herramientas descargadas no son necesarias para todas las versiones, únicamente para la versión más completa de estas ejecuciones siendo la tercera del listado que os mencionaremos más adelante, dicho esto cabe destacar que también es la que lleva más pasos para poder realizar. Dicho esto os dejamos un listado de las diferentes ejecuciones del WAP posibles.
 <ol>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>WAF en el sistema y BD en docker</li>
+  <li>WAF en el sistema y BD en docker con ZeroTier</li>
+  <li>WAF en el docker y BD en docker con ZeroTier</li>
+</ol>
+
+<h3 align="left">4.2-WAF en el sistema y BD en docker</h3>
+<ol>
+  <li>Abrimos la terminal y ejecutamos docker run -d --name seminario2 -e MYSQL_ROOT_PASSWORD=sem2 -e MYSQL_DATABASE=seminario2 -p 3306:3306 mysql
+</li>
+  <li>Deberemos de asegurarnos de tener en el archivo src/App/src/api.js el correcto host para realizar la conexión en este caso sería o bien la ip de nuestro sistema o bien localhost en el apartado host de dbconfig</li>
+  <li>En el mismo directorio que el backend (archivo api.js) ejecutaremos: 
+node api.js
+</li>
+  <li>En la raíz del proyecto expo start</li>
+  <li>Tras esto abrimos un navegador y en buscador buscaremos localhost:19006, ya que la aplicación se ejecuta en el puerto 19006.</li>
+  <li>Reseteamos la base de datos para tenerla generada y ya podríamos acceder a la aplicación</li>
+</ol>
+
+<h3 align="left">4.3-WAF en el sistema y BD en docker con ZeroTier</h3>
+<ol>
+  <li>Iniciamos la aplicación de ZeroTier</li>
+  <li>Iniciamos sesión en  https://www.zerotier.com/</li>
+  <li>Accedemos a la red que hemos generado y conectado a nuestro dispositivo previamente (Apartado 3.5)</li>
+  <li>Nos dirigiremos al apartado Auth? y concederemos el acceso a la ip del dispositivo que se aloje el WAF y del dispositivo sobre el que nos queramos conectar</li>
+  <li>Apuntaremos la IP del dispositivo que ejecute el WAF y en el archivo /src/App/src cambiaremos el apartado host de dbconfig la IP que hemos apuntado</li>
+  <li>Generamos un docker con la imagen de mysql por medio del comando:
+docker run -d --name seminario2 -e MYSQL_ROOT_PASSWORD=sem2 -e MYSQL_DATABASE=seminario2 -p 3306:3306 mysql
+</li>
+  <li>En el mismo directorio que el backend (archivo api.js) ejecutaremos: 
+node api.js
+</li>
+  <li>En la raíz del proyecto expo start</li>
+  <li>Tras esto abrimos un navegador y en buscador buscaremos localhost:19006, ya que la aplicación se ejecuta en el puerto 19006, en caso de ver la base de datos desde otro dispositivo deberemos de utilizar la IP de la máquina en la que se ejecute el WAF.</li>
+  <li>Reseteamos la base de datos para tenerla generada y ya podríamos acceder a la aplicación</li>
+</ol>
+
+<h3 align="left">4.4-WAF en el docker y BD en docker con ZeroTier</h3>
+Este es el tipo de ejecución que consideramos el más completo a la par que el más largo y complejo de ejecutar:
+<ol>
+  <li>Iniciamos la aplicación de ZeroTier</li>
+  <li>Iniciamos sesión en  https://www.zerotier.com/</li>
+  <li>Accedemos a la red que hemos generado y conectado a nuestro dispositivo previamente (Apartado 3.5)</li>
+  <li>Nos dirigiremos al apartado Auth? y concederemos el acceso a la ip del dispositivo que se aloje el WAF y del dispositivo sobre el que nos queramos conectar</li>
+  <li>Apuntaremos la IP del dispositivo que ejecute el WAF y en el archivo /src/App/src cambiaremos el apartado host de dbconfig la IP que hemos apuntado</li>
+<li>Abrimos la terminal y ejecutamos docker run -d --name seminario2 -e MYSQL_ROOT_PASSWORD=sem2 -e MYSQL_DATABASE=seminario2 -p 3306:3306 mysql
+</li>
+  <li>Nos dirigimos a la raíz del proyecto es decir al directorio App</li>
+  <li>Ejecutaremos el comando docker build -t ddsi para generar la imagen del docker</li>
+  <li>Ejecutamos el comando docker run -p 19006:19006 -p 19000:19000 -p 19001:19001 -p 19002:19002 -p 5050:5050 -p 3000:3000 --name
+ App --network mi_red -it ddsi
+</li>
+  <li>Tras esto abrimos un navegador y en buscador buscaremos localhost:19006, ya que la aplicación se ejecuta en el puerto 19006, en caso de ver la base de datos desde otro dispositivo deberemos de utilizar la IP de la máquina en la que se ejecute el WAF</li>
+  <li>Reseteamos la base de datos para tenerla generada y ya podríamos acceder a la aplicación</li>
 </ol>
