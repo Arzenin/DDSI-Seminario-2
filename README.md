@@ -1,11 +1,11 @@
-<h1 align="center">Resumen y Organización del Repositorio DDSI-Seminario-2</h1>
+#Resumen y Organización del Repositorio DDSI-Seminario-2#
 <h3 align="center">1-Miembros del grupo</h3>
 <h5 align="left">Jose Manuel Aranda Gutiérrez</h5>
 <h5 align="left">Gabriel Vico Arboledas</h5>
 <h5 align="left">Pablo Gervilla Miranda</h5>
 <h5 align="left">Rubén Gázquez Gallardo</h5>
 <h5 align="left">Gonzalo Sanz Guerrero</h5>
-<h3 align="center">2-Organización del repositorio</h3>
+##2-Organización del repositorio##
 En este apartado os explicaremos la organización del repositorio y de los archivos que podemos encontrar de cada directorio
 <h3 align="center">2.1-scr</h3>
 El directorio src esta destinado al almacenamiento de todos lo códigos utilizados a la hora del desarrollo del WAF, como podemos observar a su vez este directorio contiene 3 directorios más, al directorio App le dedicaremos su propia sección.
