@@ -29,6 +29,7 @@
 <p>Para el correcto funcionamiento de este proyecto deberemos instalar determinadas herramientas las cuales explicaremos a continuación.</p>
 
 <h3 align="left">Instalación de git</h3>
+<h5 align="left">ubuntu</h5>
 <ol>
   <li>Primer elemento</li>
   <li>Segundo elemento</li>
