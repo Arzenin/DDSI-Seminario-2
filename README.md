@@ -5,9 +5,9 @@
 <h5 align="left">Pablo Gervilla Miranda</h5>
 <h5 align="left">Rubén Gázquez Gallardo</h5>
 <h5 align="left">Gonzalo Sanz Guerrero</h5>
-<h3 align="left">2-Organización del repositorio</h3>
+<h3 align="center">2-Organización del repositorio</h3>
 En este apartado os explicaremos la organización del repositorio y de los archivos que podemos encontrar de cada directorio
-<h3 align="left-center">2.1-scr</h3>
+<h3 align="center">2.1-scr</h3>
 El directorio src esta destinado al almacenamiento de todos lo códigos utilizados a la hora del desarrollo del WAF, como podemos observar a su vez este directorio contiene 3 directorios más, al directorio App le dedicaremos su propia sección.
 
 Con respecto a los otros 2, estan destinados a la comprobación del correcto funcionamiento de la base de datos en el docker o en el sistema donde queramos ejecutarla, para ello tenemos el directorio Scripts in Mysql el cual contiene un script en sql destinado a la correcta creación de las tablas dentro de la base de datos.Para finalizar el directorio Scripts in Java contiene los escripts necesarios para la correcta conexión de un código externo ejecutado en Java con la base de datos, al igual que en seminario uno, este código se hizo pensando el uso del driver de JDBC, con lo cual será necesario su correcta instalación y direccionamiento de host para su correcto funcionamiento.
@@ -22,3 +22,7 @@ Nuestro .gitignore esta configurado con el objetivo de la comodidad de nuestro e
 
 <h3 align="center">2.4-README.md</h3>
 Es el fichero que usted esta leyendo en este mismo instante, cuya función es la de documentar el repositorio y explicar la correcta instalación y ejecución del proyecto
+
+<h3 align="center">Instalación de utilidades</h3>
+Para el correcto funcionamiento de este proyecto deberemos de instalar determinadas herramientas las cuales explicaremos a continuación
+<h3 align="left">Instalación de git</h3>
