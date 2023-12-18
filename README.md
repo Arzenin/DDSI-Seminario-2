@@ -24,7 +24,9 @@
 <h3 align="center">2.4-README.md</h3>
 <p>Es el fichero que usted está leyendo en este mismo instante, cuya función es la de documentar el repositorio y explicar la correcta instalación y ejecución del proyecto.</p>
 
-
+<h5 align="left"></h5>
+<h5 align="left"></h5>
+<h5 align="left"></h5>
 <h3 align="left">3-Instalación y preparación de utilidades</h3>
 <p>Para el correcto funcionamiento de este proyecto deberemos instalar determinadas herramientas las cuales explicaremos a continuación.</p>
 
