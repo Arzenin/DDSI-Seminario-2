@@ -38,7 +38,7 @@
 
 <h4 align="left">Windows</h4>
 <ol>
-  <li></li>
+  
   <li></li>
   <li></li>
 </ol>
@@ -49,4 +49,12 @@
   <li>https://git-scm.com/download/win</li>
   <li>Instalamos la Versión de Windows que dispongamos</li>
   <li>Ejecutamos el instalador con los valores que deseemos no olvidando de marcar la opción de Git from command line and also from 3ed-party software, ya que si no              deberemos de añadir manualmente la variable de git por medio de modificar las variables de entorno(PATH) manualmente</li>
+  <li>Abrimos la power shell y ejecutamos el comando: git --version para comprobar la correcta instalación.</li>
+</ol>
+<h3 align="left">Clonación de repositorio de git</h3>
+<ol>
+  
+  <li>Creamos un directorio donde vayamos a bajar el repositorio y abrimos la powershell en ese directorio</li>
+  <li>Ejecutamos el comando: 
+	git clone https://github.com/Arzenin/DDSI-Seminario-2</li>
 </ol>
