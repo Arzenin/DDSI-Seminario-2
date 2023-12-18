@@ -188,7 +188,7 @@ Este es el tipo de ejecución que consideramos el más completo a la par que el 
 <li>Abrimos la terminal y ejecutamos docker run -d --name seminario2 -e MYSQL_ROOT_PASSWORD=sem2 -e MYSQL_DATABASE=seminario2 -p 3306:3306 mysql
 </li>
   <li>Nos dirigimos a la raíz del proyecto es decir al directorio App</li>
-  <li>Ejecutaremos el comando docker build -t ddsi para generar la imagen del docker</li>
+  <li>Ejecutaremos el comando docker build -t ddsi . para generar la imagen del docker</li>
   <li>Ejecutamos el comando docker run -p 19006:19006 -p 19000:19000 -p 19001:19001 -p 19002:19002 -p 5050:5050 -p 3000:3000 --name
  App --network mi_red -it ddsi
 </li>
