@@ -184,7 +184,7 @@ Este es el tipo de ejecución que consideramos el más completo a la par que el 
   <li>Iniciamos sesión en  https://www.zerotier.com/</li>
   <li>Accedemos a la red que hemos generado y conectado a nuestro dispositivo previamente (Apartado 3.5)</li>
   <li>Nos dirigiremos al apartado Auth? y concederemos el acceso a la ip del dispositivo que se aloje el WAF y del dispositivo sobre el que nos queramos conectar</li>
-  <li>Apuntaremos la IP del dispositivo que ejecute el WAF y en el archivo /src/App/src cambiaremos el apartado host de dbconfig la IP que hemos apuntado</li>
+  <li>Apuntaremos la IP del dispositivo que ejecute la BD y en el archivo /src/App/src cambiaremos el apartado host de dbconfig la IP que hemos apuntado</li>
 <li>Abrimos la terminal y ejecutamos docker run -d --name seminario2 -e MYSQL_ROOT_PASSWORD=sem2 -e MYSQL_DATABASE=seminario2 -p 3306:3306 mysql
 </li>
   <li>Nos dirigimos a la raíz del proyecto es decir al directorio App</li>
