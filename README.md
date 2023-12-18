@@ -195,3 +195,25 @@ Este es el tipo de ejecución que consideramos el más completo a la par que el 
   <li>Tras esto abrimos un navegador y en buscador buscaremos localhost:19006, ya que la aplicación se ejecuta en el puerto 19006, en caso de ver la base de datos desde otro dispositivo deberemos de utilizar la IP de la máquina en la que se ejecute el WAF</li>
   <li>Reseteamos la base de datos para tenerla generada y ya podríamos acceder a la aplicación</li>
 </ol>
+
+<h2 align="left">5-BIBLIOGRAFÍA</h2>
+<dl>
+  <dt>1-Guías docentes de las asignaturas de Ingeniería Informática:</dt>
+  <dd>https://grados.ugr.es/ramas/ingenieria-arquitectura/grado-ingenieria-informatica</dd>
+
+  <dt>2-Realizar una variable Path en windows</dt>
+  <dd>https://www.youtube.com/watch?v=ql7V-wgZU1U</dd>
+  <dd>https://www.youtube.com/watch?v=nArGHJR2zlg</dd>
+  
+  <dt>3-Web de Git para su descarga:</dt>
+  <dd>https://git-scm.com/download/win</dd>
+  
+  <dt>4-Web de Docker para su descarga:</dt>
+  <dd>https://www.docker.com/products/docker-desktop/</dd>
+  
+  <dt>5-Web de ZeroTier</dt>
+  <dd>https://www.zerotier.com/</dd>
+  
+  <dt>6-Web de Node.js para su descarga:</dt>
+  <dd>https://nodejs.org/en</dd>
+</dl>
