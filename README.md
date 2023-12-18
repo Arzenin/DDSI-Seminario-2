@@ -6,7 +6,7 @@
 <h5 align="left">Rubén Gázquez Gallardo</h5>
 <h5 align="left">Gonzalo Sanz Guerrero</h5>
 
-<h3 align="center">2-Organización del repositorio</h3>
+<h2 align="center">2-Organización del repositorio</h2>
 <p>En este apartado os explicaremos la organización del repositorio y de los archivos que podemos encontrar de cada directorio.</p>
 
 <h3 align="center">2.1-scr</h3>
@@ -24,7 +24,7 @@
 <h3 align="center">2.4-README.md</h3>
 <p>Es el fichero que usted está leyendo en este mismo instante, cuya función es la de documentar el repositorio y explicar la correcta instalación y ejecución del proyecto.</p>
 
-<h3 align="left">3-Instalación y preparación de utilidades</h3>
+<h2 align="left">3-Instalación y preparación de utilidades</h2>
 <p>Para el correcto funcionamiento de este proyecto deberemos instalar determinadas herramientas las cuales explicaremos a continuación.</p>
 
 <h3 align="left">3.2-Instalación de git</h3>
@@ -137,7 +137,7 @@ y node –version, en caso de que estos fallen se deberá a que no se han añadi
 
 
  
-<h3 align="left">Generar una red virtual en ZeroTier</h3>
+<h3 align="left">Tutorial de Ejecución</h3>
 <h4 align="left">Windows</h4>
 <ol>
   <li></li>
