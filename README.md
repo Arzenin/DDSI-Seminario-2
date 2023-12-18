@@ -25,10 +25,10 @@
 <p>Es el fichero que usted está leyendo en este mismo instante, cuya función es la de documentar el repositorio y explicar la correcta instalación y ejecución del proyecto.</p>
 
 
-<h3 align="center">Instalación de utilidades</h3>
+<h3 align="center">3-Instalación y preparación de utilidades</h3>
 <p>Para el correcto funcionamiento de este proyecto deberemos instalar determinadas herramientas las cuales explicaremos a continuación.</p>
 
-<h3 align="left">Instalación de git</h3>
+<h3 align="left">3.2-Instalación de git</h3>
 <h4 align="left">ubuntu</h4>
 <ol>
   <li>sudo apt update</li>
@@ -44,14 +44,14 @@
   <li>Abrimos la power shell y ejecutamos el comando: git --version para comprobar la correcta instalación.</li>
 </ol>
 
-<h3 align="left">Clonación de repositorio de git</h3>
+<h3 align="left">3.2-Clonación de repositorio de git</h3>
 <ol>
   <li>Creamos un directorio donde vayamos a bajar el repositorio y abrimos la powershell en ese directorio</li>
   <li>Ejecutamos el comando: 
 	git clone https://github.com/Arzenin/DDSI-Seminario-2</li>
 </ol>
 
-<h3 align="left">Instalación de Docker</h3>
+<h3 align="left">3.3-Instalación de Docker</h3>
 
 <h4 align="left">Ubuntu</h4>
 <ol>
@@ -72,7 +72,7 @@
   <li>Abrimos la Powershell y ejecutamos docker --version para comprobar la correcta instalación</li>
 </ol>
 
-<h3 align="left">Instalación ZeroTier</h3>
+<h3 align="left">3.4-Instalación ZeroTier</h3>
 Previo a esto deberemos de crearnos una cuenta en https://www.zerotier.com/
 
 <h4 align="left">Ubuntu</h4>
@@ -90,7 +90,7 @@ Previo a esto deberemos de crearnos una cuenta en https://www.zerotier.com/
   <li>En el apartado de iconos de la bandeja del sistema(la flecha en la barra de tareas que podemos desplegar). Se encuentra ZeroTier</li>
 </ol>
 
-<h3 align="left">Generar una red virtual en ZeroTier</h3>
+<h3 align="left">3.4-Generar una red virtual en ZeroTier</h3>
 
 <ol>
   <li>Nos dirigimos a https://www.zerotier.com/</li>
@@ -104,15 +104,15 @@ sudo zerotier-cli join <ID_de_Red>
 	
 <h4 align="left">Windows</h4>
 Click sobre el icono de zeroTier de la barra de tareas (Aplicaciones en segundo plano) y join new network, copiamos el network id en el campo correspondiente.
-<h3 align="left">Instalación del docker de MYSQL2</h3>
-	
+
+<h3 align="left">3.5-Instalación del docker de MYSQL2</h3>
 <h4 align="left">Cualquier sistema con docker instalado</h4>
 <ol>
   <li>Abrimos la terminal</li>
   <li>docker pull mysql</li>
 </ol>
 	
-<h3 align="left">Instalación del WAF</h3>
+<h3 align="left">3.6-Instalación del WAF</h3>
 <h4 align="left">Ubuntu:</h4>
 <ol>
   <li>sudo apt update</li>
